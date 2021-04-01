@@ -29,7 +29,7 @@ function App() {
       </div>
       <div>
         <ul>
-          {list.map(item => <li>{item}</li>)}
+          {list.map((item) => <li key={list.indexOf(item)}>{item}</li>)}
         </ul>
       </div>
     </div>
